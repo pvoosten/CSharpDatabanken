@@ -1,0 +1,2 @@
+# CSharpDatabanken
+Oplossingen oefeningen databanken
