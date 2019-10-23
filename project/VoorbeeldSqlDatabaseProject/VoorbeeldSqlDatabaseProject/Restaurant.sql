@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Restaurant]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Naam] NVARCHAR(150) NOT NULL, 
+    [Kok] NCHAR(10) NULL
+)
