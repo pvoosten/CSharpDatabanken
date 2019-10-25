@@ -455,15 +455,17 @@ Los op met een niet-gelinkte subquery, gedeclareerd in een parameter (dus met DE
 ```sql
 DECLARE @firstname TABLE (FirstName VARCHAR(100))
 
-SET @firstname = (
-  SELECT firstname
-  FROM Employee
-  )
+INSERT INTO @firstname
+SELECT firstname
+FROM Employee
 
-SELECT firstname,
- lastname
+SELECT firstname
+	,lastname
 FROM Customer
-WHERE firstname IN (@firstname)
+WHERE firstname IN (
+		SELECT *
+		FROM @firstname
+		)
 ```
 
 # INSERT UPDATE en DELETE
