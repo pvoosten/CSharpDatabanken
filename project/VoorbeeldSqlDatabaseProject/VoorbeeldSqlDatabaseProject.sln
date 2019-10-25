@@ -5,11 +5,6 @@ VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "VoorbeeldSqlDatabaseProject", "VoorbeeldSqlDatabaseProject\VoorbeeldSqlDatabaseProject.sqlproj", "{3D6CB617-3EAF-4E75-98FA-B3EB68542690}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql scripts", "sql scripts", "{37D56C08-C276-483A-855E-4BB5FB7DB263}"
-	ProjectSection(SolutionItems) = preProject
-		insert.sql = insert.sql
-	EndProjectSection
-EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ChinookDatabaseProject", "ChinookDatabaseProject\ChinookDatabaseProject.sqlproj", "{C050CDF4-BFE3-487F-8EBD-A53405407579}"
 EndProject
 Global

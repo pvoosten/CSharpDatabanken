@@ -120,6 +120,7 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
+    <Folder Include="seedData" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Album.sql">
@@ -166,8 +167,14 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="View1.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ChinookDatabaseProject.publish.xml" />
+    <None Include="seedData\dbo.Album.data.sql" />
+    <None Include="seedData\dbo.Artist.data.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>
