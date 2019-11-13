@@ -168,13 +168,18 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="View1.sql" />
+    <Build Include="AlbumEnArtiest.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ChinookDatabaseProject.publish.xml" />
     <None Include="seedData\dbo.Album.data.sql" />
-    <None Include="seedData\dbo.Artist.data.sql" />
+    <None Include="seedData\dbo.Artist.data.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="seedData\dbo.Genre.data.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment1.sql" />
+    <None Include="Script.PostDeployment1.sql" />
+    <None Include="Script.PostDeployment2.sql" />
   </ItemGroup>
 </Project>

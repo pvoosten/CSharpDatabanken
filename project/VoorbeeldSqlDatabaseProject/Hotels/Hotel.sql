@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Hotel]
+(
+	[HotelId] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Naam] VARCHAR(50) NULL, 
+    [Stad] VARCHAR(50) NOT NULL, 
+    [Keten] VARCHAR(50) NULL
+)

@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "VoorbeeldSqlDatabaseProject
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ChinookDatabaseProject", "ChinookDatabaseProject\ChinookDatabaseProject.sqlproj", "{C050CDF4-BFE3-487F-8EBD-A53405407579}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Hotels", "Hotels\Hotels.sqlproj", "{693C7B8C-A961-42C3-A6C0-3C18B6899B21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,12 @@ Global
 		{C050CDF4-BFE3-487F-8EBD-A53405407579}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C050CDF4-BFE3-487F-8EBD-A53405407579}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C050CDF4-BFE3-487F-8EBD-A53405407579}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{693C7B8C-A961-42C3-A6C0-3C18B6899B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693C7B8C-A961-42C3-A6C0-3C18B6899B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693C7B8C-A961-42C3-A6C0-3C18B6899B21}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{693C7B8C-A961-42C3-A6C0-3C18B6899B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693C7B8C-A961-42C3-A6C0-3C18B6899B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{693C7B8C-A961-42C3-A6C0-3C18B6899B21}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
