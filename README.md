@@ -289,6 +289,23 @@ JOIN track t ON a.AlbumId = t.AlbumId
 GROUP BY a.Title,
  a.ArtistId
 ```
+
+Alternatieve oplossing:
+```sql
+SELECT 
+	Album.Title,
+	Artist.Name, Count(*) [aantal tracks],
+	SUM(Track.Milliseconds),
+	AVG(Track.Milliseconds)
+	,string_agg(Track.Name, ',' )
+FROM Album JOIN Artist ON Artist.ArtistId = Album.ArtistId
+		LEFT JOIN Track ON TRack.AlbumId = Album.AlbumId
+GROUP BY
+	Album.AlbumId,
+	Album.Title,
+	Artist.Name
+```
+
 ----
 Geef per playlist de naam en het aantal tracks. Je hebt zowel een JOIN als een GROUP BY nodig.
 
