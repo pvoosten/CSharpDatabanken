@@ -519,6 +519,49 @@ Je hebt hiervoor 2 insert statements nodig.
 
 ## Oplossing
 ```sql
+DECLARE @prijs DECIMAL(10,2) = 3.99
+
+BEGIN TRANSACTION
+
+INSERT INTO [dbo].[Invoice] (
+	[InvoiceId]
+	,[CustomerId]
+	,[InvoiceDate]
+	,[BillingAddress]
+	,[BillingCity]
+	,[BillingState]
+	,[BillingCountry]
+	,[BillingPostalCode]
+	,[Total]
+	)
+VALUES (
+	1000
+	,58
+	,N'2013-12-22 00:00:00'
+	,N'12,Community Centre'
+	,N'Delhi'
+	,NULL
+	,N'India'
+	,N'110017'
+	,@prijs
+	)
+
+INSERT INTO [dbo].[InvoiceLine] (
+	[InvoiceLineId]
+	,[InvoiceId]
+	,[TrackId]
+	,[UnitPrice]
+	,[Quantity]
+	)
+VALUES (
+	9999
+	,1000
+	,16
+	,@prijs
+	,1
+	)
+
+COMMIT TRANSACTION
 
 ```
 ----
